@@ -9,7 +9,7 @@
 
 A modern news application built with Vue.js and Sanity CMS.
 
-![VNews Screenshot](https://via.placeholder.com/800x400?text=VNews+Screenshot)
+[//]: # (![VNews Screenshot]&#40;https://via.placeholder.com/800x400?text=VNews+Screenshot&#41;)
 
 ## Features
 
@@ -108,13 +108,13 @@ This project includes Docker configuration for easy deployment of both the front
 
 ```bash
 # Build and start all services
-docker-compose up -d
+docker compose up -d
 
 # View logs
-docker-compose logs -f
+docker compose logs -f
 
 # Stop all services
-docker-compose down
+docker compose down
 ```
 
 ### Individual Docker Builds
