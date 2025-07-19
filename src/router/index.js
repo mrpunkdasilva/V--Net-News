@@ -13,11 +13,11 @@ const routes = [
 	// name: 'Authors',
 	// component: () => import('../views/Authors.vue'),
   // },
-  // {
-	// path: '/post/:id',
-	// name: 'Post',
-	// component: () => import('../views/post/_id.vue'),
-  // },
+  {
+	path: '/post/:id',
+	name: 'Post',
+	component: () => import('../views/post/_id.vue'),
+  },
   // {
 	// path: '/author/:id',
 	// name: 'Author',

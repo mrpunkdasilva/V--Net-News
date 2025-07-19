@@ -1,13 +1,15 @@
-import sanity from "./client";
-import imageUrlBuilder from "@sanity/image-url";
+import sanity from '@/client'
+import imageUrlBuilder from '@sanity/image-url'
+const builder = imageUrlBuilder(sanity)
 
-const builder = imageUrlBuilder(sanity);
-
-export const CreateURL = (source, width = 300, heigth = 300) => {
-    return builder.image(source).width(width).height(heigth).url()
+export const CreateURL = (source, width = 300, height = 300) => {
+	return builder.image(source).width(width).height(height).url()
 }
 
-export const FormatDate = date => {
-    let newDate = new Date(date);
-    return `${newDate.getDate()}/${newDate.getMonth()+1}/${newDate.getFullYear()}`
+export const TextToHTML = (text) => {
+	return text.replace(/\n/g, "<br>")
+}
+
+export const FormatDate = (date) => {
+	return new Date(date).toLocaleDateString()
 }
