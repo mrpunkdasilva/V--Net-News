@@ -1,22 +1,15 @@
 <template>
-<header class="flex w-full items-center justify-center p-4">
+<header class="flex w-full items-center justify-center p-2 bg-win-gray border-2 border-win-white border-b-win-black border-r-win-black">
 
-  <div
-      :class="`menu-toggle relative z-50 ${
-        menu_is_active? 'is-active' : ''
-      }`"
+  <button
+      class="btn absolute top-2 left-2"
       @click="ToggleMenu"
   >
-
-    <div class="hamburger">
-      <span>
-      </span>
-    </div>
-
-  </div>
-
-  <h1 class="text-center text-2xl uppercase font-extrabold tracking-widest">
-    VNews
+    Menu
+  </button>
+  <img src="/logo.svg" alt="logo" class="w-8 h-8 mr-2">
+  <h1 class="text-center text-lg uppercase font-bold tracking-widest text-win-black">
+    V-Net
   </h1>
 
 </header>
@@ -42,66 +35,5 @@ export default {
 </script>
 
 <style scoped>
-
-.menu-toggle {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
-.hamburger {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 32px;
-  height: 32px;
-}
-
-.hamburger span {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.hamburger span,
-.hamburger span::before,
-.hamburger span::after {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 99px;
-  background: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.hamburger span::before,
-.hamburger span::after {
-  content: "";
-}
-
-.hamburger span::before {
-  top: -8px;
-}
-
-.hamburger span::after {
-  bottom: -8px;
-}
-
-.menu-toggle.is-active .hamburger > span {
-  transform: rotate(45deg);
-}
-
-.menu-toggle.is-active .hamburger > span:before {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-.menu-toggle.is-active .hamburger > span:after {
-  top: 0;
-  transform: rotate(90deg);
-}
 
 </style>
