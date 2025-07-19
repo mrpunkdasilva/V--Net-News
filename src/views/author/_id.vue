@@ -1,17 +1,17 @@
 <template>
 	<main class="post-page">
-		<section v-if="author" class="container mx-auto p-4">
+		<section v-if="author" class="container mx-auto p-4 bg-win-gray border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black">
 			<div class="flex items-center mb-4">
 				<img
 					:src="CreateURL(author.avatar)"
-					class="inline-block rounded-full w-16 h-16 mr-4"  />
+					class="inline-block w-16 h-16 mr-4 border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black"  />
 
-				<h1 class="text-gray-500 text-2xl uppercase font-bold">
+				<h1 class="text-win-black text-2xl uppercase font-bold">
 					{{ author.full_name }}
 				</h1>
 			</div>
 
-			<p class="text-gray-500 mb-8">{{ author.short_bio }}</p>
+			<p class="text-win-black mb-8">{{ author.short_bio }}</p>
 
 			<div class="grid gap-4" v-if="author.posts">
 				<PostCard
