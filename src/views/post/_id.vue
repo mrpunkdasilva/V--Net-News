@@ -1,26 +1,26 @@
 <template>
 	<main class="post-page">
-		<section v-if="post" class="container mx-auto p-4">
-			<img :src="CreateURL(post.image, 1280, 300)" class="w-full mb-8">
+		<section v-if="post" class="container mx-auto p-5 bg-win-gray border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black">
+			<img :src="CreateURL(post.image, 1280, 300)" class="w-full mb-8 border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black">
 
 			<button
 				@click="$router.back()"
-				class="flex items-center text-lg text-green-500 hover:text-green-600 duration-300 mb-4">
-				<span class="material-icons text-lg mr-1">keyboard_double_arrow_left</span> Back
+				class="btn flex items-center text-lg mb-4">
+				&lt;&lt; Back
 			</button>
 
-			<h1 class="text-3xl md:text-5xl mb-8">{{ post.title }}</h1>
+			<h1 class="text-3xl md:text-5xl my-8 text-win-black">{{ post.title }}</h1>
 
-			<p class="text-gray-500 italic mb-8">{{ post.excerpt }}</p>
+			<p class="text-win-black italic mb-8">{{ post.excerpt }}</p>
 
-			<p v-html="TextToHTML(post.content)" class="text-lg mb-8"></p>
+			<p v-html="TextToHTML(post.content)" class="text-base mb-8 text-win-black leading-relaxed"></p>
 
 			<div class="flex items-center mb-4" v-if="post.author">
 				<img
 					:src="CreateURL(post.author.avatar, 300, 300)"
-					class="inline-block rounded-full w-10 h-10 mr-4"  />
+					class="inline-block w-10 h-10 mr-4 border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black"  />
 
-				<h1 class="text-gray-500">
+				<h1 class="text-win-black">
 					{{ post.author.full_name }}
 				</h1>
 			</div>
