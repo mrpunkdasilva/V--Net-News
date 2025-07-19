@@ -1,8 +1,8 @@
 <template>
-	<div class="bg-gray-800 rounded-lg p-4 text-center">
-		<img :src="CreateURL(author.avatar, 300, 300)" class="inline-block rounded-full w-32 h-32 mb-4" />
-		<h3 class="text-xl font-bold mb-4">{{ author.full_name }}</h3>
-		<p class="text-gray-400 mb-4">{{ author.short_bio }}</p>
+	<div class="bg-win-gray border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black p-4 text-center">
+		<img :src="CreateURL(author.avatar, 300, 300)" class="inline-block w-32 h-32 mb-4 border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black" />
+		<h3 class="text-xl font-bold mb-4 text-win-black">{{ author.full_name }}</h3>
+		<p class="text-win-black mb-4">{{ author.short_bio }}</p>
 		<router-link :to="`/author/${author._id}`" class="btn">Profile</router-link>
 	</div>
 </template>
