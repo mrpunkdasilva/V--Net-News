@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-gray-700 min-h-screen text-white">
+	<div class="bg-win-blue min-h-screen text-white">
 		<Header />
 		<Sidebar />
 		<router-view />
@@ -22,9 +22,9 @@ export default {
 
 <style>
 .btn {
-	@apply bg-green-600 duration-300 font-bold py-2 px-4 rounded-lg inline-block;
+  @apply bg-win-gray text-win-black px-4 py-2 border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black text-sm;
 }
-.btn:hover {
-	@apply bg-green-700;
+.btn:active {
+  @apply border-t-win-black border-l-win-black border-b-win-white border-r-win-white;
 }
 </style>
