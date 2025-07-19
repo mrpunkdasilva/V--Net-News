@@ -1,15 +1,18 @@
-# VNews
+<p align="center">
+  <img src="public/logo.svg" alt="V-Net Logo" width="150"/>
+</p>
+<h1 align="center">V-Net</h1>
 
-[![Project Status: Active](https://img.shields.io/badge/Project%20Status-Active-green.svg)](https://github.com/yourusername/vnews)
+[![Project Status: Active](https://img.shields.io/badge/Project%20Status-Active-green.svg)](https://github.com/yourusername/v-net)
 [![Vue.js](https://img.shields.io/badge/Vue.js-v3.2-4FC08D?logo=vue.js&logoColor=white)](https://vuejs.org/)
 [![Sanity CMS](https://img.shields.io/badge/Sanity%20CMS-v3.68-f03e2f?logo=sanity&logoColor=white)](https://www.sanity.io/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3.4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A modern news application built with Vue.js and Sanity CMS.
+V-Net is a retro-themed news application built with Vue.js and Sanity CMS, designed to evoke the nostalgic feel of the Windows 95 era. It combines a classic aesthetic with modern web technologies to deliver a unique news browsing experience.
 
-[//]: # (![VNews Screenshot]&#40;https://via.placeholder.com/800x400?text=VNews+Screenshot&#41;)
+[//]: # (![V-Net Screenshot]&#40;https://via.placeholder.com/800x400?text=V-Net+Screenshot&#41;)
 
 ## Features
 
@@ -17,17 +20,9 @@ A modern news application built with Vue.js and Sanity CMS.
 - 🔍 Advanced search functionality
 - 🔄 Real-time content updates
 - 📊 Category-based news filtering
-- 🌙 Dark/Light mode toggle
+
 - 🔒 Content management with Sanity CMS
 - 🐳 Docker containerization for easy deployment
-
-## Project Status
-
-- ✅ Frontend Development: In Progress
-- ✅ Backend Development: In Progress
-- ✅ Docker Configuration: Complete
-- ⏳ Testing: Pending
-- ⏳ Deployment: Pending
 
 ## Project Structure
 
@@ -44,8 +39,8 @@ A modern news application built with Vue.js and Sanity CMS.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/vnews.git
-cd vnews
+git clone https://github.com/yourusername/v-net.git
+cd v-net
 
 # Install dependencies for frontend
 npm install
@@ -58,7 +53,7 @@ cp .env.example .env
 npm run serve
 
 # In a separate terminal, set up Sanity CMS
-cd vnews-feed
+cd v-net-feed
 npm install
 npm run dev
 ```
@@ -85,7 +80,7 @@ npm run lint
 
 ```bash
 # Navigate to Sanity project directory
-cd vnews-feed
+cd v-net-feed
 
 # Install dependencies
 npm install
@@ -123,23 +118,23 @@ docker compose down
 
 ```bash
 # Build the Docker image
-docker build -t vnews-frontend .
+docker build -t v-net-frontend .
 
 # Run the container
-docker run -p 8080:80 vnews-frontend
+docker run -p 8080:80 v-net-frontend
 ```
 
 #### Backend (Sanity CMS)
 
 ```bash
 # Navigate to Sanity project directory
-cd vnews-feed
+cd v-net-feed
 
 # Build the Docker image
-docker build -t vnews-sanity .
+docker build -t v-net-sanity .
 
 # Run the container
-docker run -p 3333:3333 vnews-sanity
+docker run -p 3333:3333 v-net-sanity
 ```
 
 ## Sanity CMS Setup
@@ -152,7 +147,7 @@ npm install --global sanity@latest
 sanity login
 
 # Navigate to Sanity project directory
-cd vnews-feed
+cd v-net-feed
 
 # Start Sanity Studio
 sanity start
