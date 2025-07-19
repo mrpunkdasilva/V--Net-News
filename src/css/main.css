@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  background-color: #008080;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur118.cur), auto;
+}
+
+a,
+button,
+.btn {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), pointer;
+}
+
+::selection {
+  background: #000080; /* Windows 95 blue selection */
+  color: #FFFFFF;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur118.cur), auto;
+}
+
+/* Scrollbar styles for Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #C0C0C0;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C0C0C0;
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #C0C0C0;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #C0C0C0;
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  height: 16px;
+  width: 16px;
+}
+
+::-webkit-scrollbar-button:active {
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #C0C0C0;
+}
