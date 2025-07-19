@@ -1,9 +1,9 @@
 <template>
-	<main class="home-page">
-		<section class="container mx-auto p-4">
-			<h1 class="text-2xl mb-8">Latest posts</h1>
+	<main class="home-page p-4">
+		<section class="container mx-auto p-4 bg-win-gray border-2 border-t-win-white border-l-win-white border-b-win-black border-r-win-black">
+			<h1 class="text-2xl mb-8 text-win-black">Latest posts</h1>
 
-			<div class="grid gap-4">
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
 				<PostCard v-for="(post, i) in posts" :key="i" :post="post" />
 			</div>
 
