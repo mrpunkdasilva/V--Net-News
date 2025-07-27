@@ -16,6 +16,9 @@ V-Net is a retro-themed news application built with Vue.js and Sanity CMS, desig
 
 ## Features
 
+![V-Net Screenshot 1](.github/print_1.jpeg)
+![V-Net Screenshot 2](.github/print_2.jpeg)
+
 - 📱 Responsive design for all devices
 - 🔍 Advanced search functionality
 - 🔄 Real-time content updates
